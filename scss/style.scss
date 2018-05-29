@@ -1,0 +1,142 @@
+@import "normalize";
+@import "layout";
+
+body{
+	background: grey url('https://images3.alphacoders.com/715/thumb-1920-715794.jpg') 50% 0;
+
+}
+
+
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+.ba-cards{
+	padding-top: 120px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+}
+.ba-card{
+	background-color: #FFF;
+	border-radius: 20px;
+	display: flex;
+	justify-content: stretched;
+	align-items: stretched;
+	padding: 10px 0;
+	z-index: 1;
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	transition: transform 1.2s ease-in-out;
+
+	&__body{
+	position: relative;
+	perspective: 500px;
+	width: 150px;
+	height: 220px;
+	margin: 10px;
+}
+&__back {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	transition: transform 1.2s ease-in-out;
+	background-size: cover;
+	border-radius: 20px;
+	border: 3px solid #fff;
+	background: grey url('https://i.pinimg.com/originals/c1/dd/6d/c1dd6d19a7633270b22fe52f44a1d131.jpg');
+	background-size:cover;
+	transform: rotateY(-180deg);
+
+	}
+}
+.ba-face{
+	width: 20%;
+	text-align: center;
+	h3 {
+		margin: 0;
+}
+
+
+
+&__top {
+	font-size: 22px;
+		h3 {
+		margin: 0 0 5px;
+}
+}
+&__center {
+	width: 60%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	position: relative;
+	}
+&__center-symbol{
+	display:block;
+	width: 100%;
+	font-size: 50px;
+
+
+}
+}
